@@ -2,8 +2,9 @@ import React from 'react';
 
 const Loading = () => {
     return (
-        <div>
-            Loading
+        <div className='flex'>
+            <span className="loading loading-spinner loading-sm">
+            </span>
         </div>
     );
 };

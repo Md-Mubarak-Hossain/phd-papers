@@ -1,0 +1,9 @@
+.relative {
+  position: relative;
+} 
+
+.absolute {
+  position:fixed;
+  right: 0;
+  bottom: 50px;
+} 

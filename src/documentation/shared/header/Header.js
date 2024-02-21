@@ -2,7 +2,7 @@ import React from 'react';
 import Search from '../../../utilities/search/Search';
 import Profile from '../../../accounts/Profile';
 import AccountType from '../../../accounts/AccountType';
-import Logo from '../../../utilities/Logo';
+import Logo from '../../../utilities/logo/Logo';
 
 const Header = () => {
   const menu = <>

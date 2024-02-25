@@ -1,6 +1,5 @@
 import React from 'react';
 import Search from '../../../utilities/search/Search';
-import Logo from '../../../utilities/logo/Logo';
 import UserType from '../../../accounts/UserType/UserType';
 import Profile from '../../../accounts/UserAccount/Profile/Profile';
 
@@ -16,7 +15,7 @@ const Header = () => {
   </>
   return (
     <>
-      <div className="navbar bg-primary text-lime-100 w-full font-semibold">
+      <div className="navbar bg-primary text-lime-100 container font-semibold">
         <div className="navbar-start">
 
           {/* small Device screen */}
@@ -33,7 +32,6 @@ const Header = () => {
               <li>{menu}</li>
             </ul>
           </div>
-         <Logo/>
         </div>
 
         {/* large Device screen */}
@@ -49,12 +47,12 @@ const Header = () => {
         </div>
 
         {/* Search section */}
-        <div className="navbar-center hidden lg:flex">
+        {/* <div className="navbar-center hidden lg:flex">
           <Search />
-        </div>
+        </div> */}
 
         {/* Account Section */}
-        <div className='navbar-end flex'>
+        <div className='navbar-center flex'>
           <UserType className='px-1'/>
           <Profile/>
         </div>

@@ -8,18 +8,20 @@ import '../../documentation/chatWidget/ChatWidget.css';
 const Main = () => {
     return (
         <div className='relative'>
-            <div className='w-full'>
-                <Header />
-                <div className='flex'>
-                    <div><Navbar /></div>
+            <div className='w-full flex'>
+                <div>
+                    <Navbar />
+                </div>
+                <div className=''>
+                    <Header />
                     <div className='w-full mx-auto'>
                         <Outlet />
                     </div>
                 </div>
-                <Footer />
             </div>
+                <Footer />
             <div className='absolute'>
-            <ChatWidget/>
+                <ChatWidget />
             </div>
         </div>
     );

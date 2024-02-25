@@ -1,7 +1,7 @@
 import React from 'react';
 import Search from '../../../utilities/search/Search';
-import Profile from '../../../accounts/Profile';
-import AccountType from '../../../accounts/AccountType';
+import Profile from '../../../accounts/Profile/Profile';
+import AccountType from '../../../accounts/UserType/AccountType';
 import Logo from '../../../utilities/logo/Logo';
 
 const Header = () => {

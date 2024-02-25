@@ -9,12 +9,14 @@ const Main = () => {
     return (
         <div className='relative'>
             <div className='w-full flex'>
-                <div>
+                <div className=''>
                     <Navbar />
                 </div>
-                <div className=''>
+                <div className='container mx-0  border-2 border-yellow-600'>
+                    <div className='container mx-0 border-2 border-red-600'>
                     <Header />
-                    <div className='w-full mx-auto'>
+                    </div>
+                    <div className='mx-auto'>
                         <Outlet />
                     </div>
                 </div>

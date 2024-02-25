@@ -1,63 +1,21 @@
 import React from 'react';
 import UserType from '../../../accounts/UserType/UserType';
 import Profile from '../../../accounts/UserAccount/Profile/Profile';
+import Contact from '../../Contact/Contact';
+import About from '../../About/About';
+import Blog from '../../Blog/Blog';
+import VerifyCreditiantial from '../../VerifyCreditiential/VerifyCreditiantial';
+import Resorces from '../../resorces/Resorces';
+import Certificat from '../../certificate/Certificat';
 
 const Header = () => {
   const menu = <>
-    <li>
-    <details className='text-lg'>
-      <summary>Verify</summary>
-      <ul className="p-2">
-        <li><a>Submenu 1</a></li>
-        <li><a>Submenu 2</a></li>
-      </ul>
-    </details>
-    </li>
-    <li>
-    <details className='text-lg'>
-      <summary>Papers</summary>
-      <ul className="p-2">
-        <li><a>Submenu 1</a></li>
-        <li><a>Submenu 2</a></li>
-      </ul>
-    </details>
-    </li>
-    <li>
-    <details className='text-lg'>
-      <summary>Certificate</summary>
-      <ul className="p-2">
-        <li><a>Submenu 1</a></li>
-        <li><a>Submenu 2</a></li>
-      </ul>
-    </details>
-    </li>
-    <li>
-    <details className='text-lg'>
-      <summary>About</summary>
-      <ul className="p-2">
-        <li><a>Submenu 1</a></li>
-        <li><a>Submenu 2</a></li>
-      </ul>
-    </details>
-    </li>
-    <li>
-    <details className='text-lg'>
-      <summary>Contact</summary>
-      <ul className="p-2">
-        <li><a>Submenu 1</a></li>
-        <li><a>Submenu 2</a></li>
-      </ul>
-    </details>
-    </li>
-    <li>
-    <details className='text-lg'>
-      <summary>Blog</summary>
-      <ul className="p-2">
-        <li><a>Submenu 1</a></li>
-        <li><a>Submenu 2</a></li>
-      </ul>
-    </details>
-    </li>
+    <VerifyCreditiantial />
+    <Resorces />
+    <Certificat />
+    <About />
+    <Contact />
+    <Blog />
   </>
   return (
     <>
@@ -83,8 +41,8 @@ const Header = () => {
         </div>
         {/* Account Section */}
         <div className='navbar-center flex'>
-          <UserType className='px-1'/>
-          <Profile/>
+          <UserType className='px-1' />
+          <Profile />
         </div>
       </div>
     </>

@@ -1,10 +1,11 @@
 import React from 'react';
-
+import { FcGoogle } from "react-icons/fc";
 const SignUpGoolge = () => {
     return (
-        <div>
-            Sign up with google
-        </div>
+        <>
+            <button className="btn btn-outline btn-primary">
+                <FcGoogle />Google</button>
+        </>
     );
 };
 

@@ -1,10 +1,11 @@
 import React from 'react';
-
+import { FaGithub } from "react-icons/fa";
 const SignUpGitHub = () => {
     return (
-        <div>
-            Sign up with Git hub
-        </div>
+        <>
+            <button className="btn btn-outline btn-secondary">
+                <FaGithub />Git Hub</button>
+        </>
     );
 };
 

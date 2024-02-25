@@ -2,9 +2,11 @@ import React from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 import Main from '../layouts/Main/Main';
 import Home from '../documentation/home/Home';
-import SignUp from '../accounts/SignUp';
-import SignIn from '../accounts/SignIn';
-import Profile from '../accounts/Profile';
+import SignUp from '../accounts/UserAccount/SignUp/SignUp';
+import SignUpEmail from '../accounts/UserAccount/SignUp/SignUpEmail';
+import SignIn from '../accounts/UserAccount/SignIn/SignIn';
+import Profile from '../accounts/UserAccount/Profile/Profile';
+
 
 const Router = () => {
     const routes = createBrowserRouter([
@@ -23,6 +25,10 @@ const Router = () => {
                 {
                     path: '/signup',
                     element: <SignUp/>
+                },
+                {
+                    path: '/signupemail',
+                    element: <SignUpEmail/>
                 },
                 {
                     path: '/profile',

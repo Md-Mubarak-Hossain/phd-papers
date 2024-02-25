@@ -1,8 +1,8 @@
 import React from 'react';
 import Search from '../../../utilities/search/Search';
-import Profile from '../../../accounts/Profile/Profile';
-import AccountType from '../../../accounts/UserType/AccountType';
 import Logo from '../../../utilities/logo/Logo';
+import UserType from '../../../accounts/UserType/UserType';
+import Profile from '../../../accounts/UserAccount/Profile/Profile';
 
 const Header = () => {
   const menu = <>
@@ -55,8 +55,8 @@ const Header = () => {
 
         {/* Account Section */}
         <div className='navbar-end flex'>
-          <AccountType className='px-1'/>
-          <Profile />
+          <UserType className='px-1'/>
+          <Profile/>
         </div>
       </div>
     </>

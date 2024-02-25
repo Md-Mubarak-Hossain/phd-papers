@@ -3,14 +3,35 @@ import React from 'react';
 const SignUpEmail = () => {
     return (
         <>
-         <div className="hero min-h-screen bg-base-200">
-  <div className="hero-content flex-col lg:flex-row-reverse">
-    <div className="text-center lg:text-left">
-      <h1 className="text-5xl font-bold">Login now!</h1>
-      <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-    </div>
-    <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
+         <div className="hero min-h-screen">
+  <div className="card shrink-0 w-full">
       <form className="card-body">
+        <h1 className='p-2 bg-primary rounded text-white text-xl text-center font-medium'>Sign Up here...</h1>
+        <div className="grid grid-cols-2 gap-3">
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">First Name</span>
+          </label>
+          <input type="text" placeholder="first name" className="input input-bordered" required />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">Last Name</span>
+          </label>
+          <input type="text" placeholder="last name" className="input input-bordered" required />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">User Name</span>
+          </label>
+          <input type="text" placeholder="user name" className="input input-bordered" required />
+        </div>
+        <div className="form-control">
+          <label className="label">
+            <span className="label-text">User Photo</span>
+          </label>
+          <input type="file" placeholder="user photo" className="input input-bordered" required />
+        </div>
         <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
@@ -19,20 +40,29 @@ const SignUpEmail = () => {
         </div>
         <div className="form-control">
           <label className="label">
+            <span className="label-text">Contact No</span>
+          </label>
+          <input type="number" placeholder="contact" className="input input-bordered" required />
+        </div>
+        <div className="form-control">
+          <label className="label">
             <span className="label-text">Password</span>
           </label>
           <input type="password" placeholder="password" className="input input-bordered" required />
+          </div>
+        <div className="form-control">
           <label className="label">
-            <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
+            <span className="label-text">Retype-Password</span>
           </label>
+          <input type="password" placeholder="retype-password" className="input input-bordered" required />
+          </div>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+          <button className="btn btn-primary btn-outline">Sign Up now</button>
         </div>
       </form>
     </div>
-  </div>
-</div> 
+  </div> 
         </>
     );
 };

@@ -6,6 +6,9 @@ import SignUp from '../accounts/UserAccount/SignUp/SignUp';
 import SignUpEmail from '../accounts/UserAccount/SignUp/SignUpEmail';
 import SignIn from '../accounts/UserAccount/SignIn/SignIn';
 import Profile from '../accounts/UserAccount/Profile/Profile';
+import Contact from '../documentation/Contact/Contact';
+import About from '../documentation/About/About';
+import Blog from '../documentation/Blog/Blog';
 
 
 const Router = () => {
@@ -18,6 +21,10 @@ const Router = () => {
                     path: '/',
                     element: <Home />
                 },
+
+                /*........................
+                      Account section
+                ..........................*/ 
                 {
                     path: '/signin',
                     element: <SignIn/>
@@ -34,6 +41,22 @@ const Router = () => {
                     path: '/profile',
                     element: <Profile/>
                 },
+                 /*........................
+                      About Phd Papers
+                ..........................*/ 
+                {
+                    path: '/contact',
+                    element: <Contact/>
+                },
+                {
+                    path: '/about',
+                    element: <About/>
+                },
+                {
+                    path: '/blog',
+                    element: <Blog/>
+                },
+
             ]
         }
     ])

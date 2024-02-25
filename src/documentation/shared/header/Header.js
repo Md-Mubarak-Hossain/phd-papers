@@ -1,17 +1,63 @@
 import React from 'react';
-import Search from '../../../utilities/search/Search';
 import UserType from '../../../accounts/UserType/UserType';
 import Profile from '../../../accounts/UserAccount/Profile/Profile';
 
 const Header = () => {
   const menu = <>
-    <details className='text-xl'>
-      <summary>Parent</summary>
+    <li>
+    <details className='text-lg'>
+      <summary>Verify</summary>
       <ul className="p-2">
         <li><a>Submenu 1</a></li>
         <li><a>Submenu 2</a></li>
       </ul>
     </details>
+    </li>
+    <li>
+    <details className='text-lg'>
+      <summary>Papers</summary>
+      <ul className="p-2">
+        <li><a>Submenu 1</a></li>
+        <li><a>Submenu 2</a></li>
+      </ul>
+    </details>
+    </li>
+    <li>
+    <details className='text-lg'>
+      <summary>Certificate</summary>
+      <ul className="p-2">
+        <li><a>Submenu 1</a></li>
+        <li><a>Submenu 2</a></li>
+      </ul>
+    </details>
+    </li>
+    <li>
+    <details className='text-lg'>
+      <summary>About</summary>
+      <ul className="p-2">
+        <li><a>Submenu 1</a></li>
+        <li><a>Submenu 2</a></li>
+      </ul>
+    </details>
+    </li>
+    <li>
+    <details className='text-lg'>
+      <summary>Contact</summary>
+      <ul className="p-2">
+        <li><a>Submenu 1</a></li>
+        <li><a>Submenu 2</a></li>
+      </ul>
+    </details>
+    </li>
+    <li>
+    <details className='text-lg'>
+      <summary>Blog</summary>
+      <ul className="p-2">
+        <li><a>Submenu 1</a></li>
+        <li><a>Submenu 2</a></li>
+      </ul>
+    </details>
+    </li>
   </>
   return (
     <>
@@ -24,12 +70,7 @@ const Header = () => {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
             </div>
             <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box bg-fuchsia-50 w-fit">
-              <li>{menu}</li>
-              <li>{menu}</li>
-              <li>{menu}</li>
-              <li>{menu}</li>
-              <li>{menu}</li>
-              <li>{menu}</li>
+              {menu}
             </ul>
           </div>
         </div>
@@ -37,20 +78,9 @@ const Header = () => {
         {/* large Device screen */}
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1">
-            <li>{menu}</li>
-            <li>{menu}</li>
-            <li>{menu}</li>
-            <li>{menu}</li>
-            <li>{menu}</li>
-            <li>{menu}</li>
+            {menu}
           </ul>
         </div>
-
-        {/* Search section */}
-        {/* <div className="navbar-center hidden lg:flex">
-          <Search />
-        </div> */}
-
         {/* Account Section */}
         <div className='navbar-center flex'>
           <UserType className='px-1'/>

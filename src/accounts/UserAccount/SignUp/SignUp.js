@@ -7,7 +7,7 @@ import SignUpGitHub from './SignUpGitHub';
 import SignUpMeta from './SignUpMeta';
 const SignUp = () => {
     return (
-        <><div className="card glass lg:px-7">
+        <><div className="card glass lg:px-7 rounded-none">
             <figure className='h-20'><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="car!" /></figure>
             <div className="card-body">
                 <h2 className="card-title">Sign Up with...</h2>

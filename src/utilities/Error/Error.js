@@ -1,7 +1,5 @@
 import React from 'react';
 import './Error.css';
-import { TiHome } from "react-icons/ti";
-import { Link } from 'react-router-dom';
 const Error = () => {
     return (
         <div>

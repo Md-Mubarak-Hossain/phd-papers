@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../../../utilities/logo/Logo';
 const Navbar = () => {
   return (
-    <ul className="menu bg-base-200 lg:w-56 h-full">
+    <ul className="menu bg-base-300 lg:w-56 h-full">
       <Logo />
       <li>
         <Link to='/'>

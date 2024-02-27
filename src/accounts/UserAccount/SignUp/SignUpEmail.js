@@ -5,7 +5,7 @@ const SignUpEmail = () => {
   return (
     <>
       <div className="min-h-screen">
-        <div className="card rounded-none w-full">
+        <div className="rounded-none w-full">
           <figure className="w-full">
             <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="sign up image" className="rounded-none h-12 w-full" />
           </figure>

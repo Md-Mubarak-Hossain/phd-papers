@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar bg-primary text-lime-100 container mx-auto">
+      <div className="navbar bg-base-300  container mx-auto">
         <div className="lg:hidden">
           {/* small Device screen */}
           <div className="dropdown">

@@ -1,9 +1,13 @@
 .relative {
   position: relative;
-} 
+}
 
 .absolute {
-  position:fixed;
+  position: fixed;
   right: 0;
   bottom: 50px;
-} 
+}
+
+.chatHeight {
+  min-height: 490px;
+}

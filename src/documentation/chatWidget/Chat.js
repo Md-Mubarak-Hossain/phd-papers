@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Chat = () => <>
+const Chat = () => <div className='px-2 chatHeight'>
     <div className="chat chat-start">
         <div className="chat-image avatar">
             <div className="w-10 rounded-full">
@@ -31,5 +31,5 @@ const Chat = () => <>
             Seen at 12:46
         </div>
     </div>
-</>
+</div>
 export default Chat;

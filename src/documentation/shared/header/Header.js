@@ -55,14 +55,14 @@ const Header = () => {
 
         {/* large Device screen */}
 
-        <div className="hidden lg:flex">
-          <ul className="hero-content menu menu-horizontal px-1">{menu1}</ul>
+        <div className="hidden lg:flex gap-0">
+          <ul className="hero-content menu menu-horizontal px-1 gap-0">{menu1}</ul>
         </div>
         {/* Account Section */}
         <Search />
         <div className="flex ">
           <Swap />
-          <UserType className="px-1" />
+          <UserType/>
           <Profile />
         </div>
       </div>

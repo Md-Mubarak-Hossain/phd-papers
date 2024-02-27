@@ -5,7 +5,7 @@ const Search = () => (
     <input
       type="text"
       placeholder="Search"
-      className="input  h-8 text-black text-sm"
+      className="input  h-7 text-black text-xs w-24"
     />
   </div>
 );

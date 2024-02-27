@@ -7,7 +7,7 @@ const ChatWidget = () => {
             Open the modal using document.getElementById('ID').showModal() method 
             ...........................*/}
             <button className="btn btn-primary shadow-lg btn-sm" onClick={() => document.getElementById('my_modal_1').showModal()}> Chat Us!</button>
-            <dialog id="my_modal_1" className="modal rounded-sm h-auto top-16  bottom-auto w-96 bg-white text-black ms-auto border-0 border-cyan-200">
+            <dialog id="my_modal_1" className="modal rounded-sm h-auto top-10  bottom-auto w-96 bg-white text-black ms-auto border-0 border-cyan-200">
 
                 <div>
                     <div className='h-5 bg-primary w-96 shadow-lg'> &nbsp;</div>

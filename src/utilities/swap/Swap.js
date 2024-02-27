@@ -2,9 +2,9 @@ import React from 'react';
 
 const Swap = () => {
     return (
-        <ul className='menu'>
+        <ul className='menu gap-0'>
             <li>
-                <label className="swap swap-rotate">
+                <label className="swap swap-rotate gap-0">
 
                     {/* this hidden checkbox controls the state */}
                     <input type="checkbox" className="theme-controller" value="synthwave" />

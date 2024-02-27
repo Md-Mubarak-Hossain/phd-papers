@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const UserType = () => (
-  <ul className="menu menu-horizontal px-1">
+  <ul className="menu menu-horizontal gap-0">
     <li>
       <details className="capitalize">
         <summary>Login</summary>

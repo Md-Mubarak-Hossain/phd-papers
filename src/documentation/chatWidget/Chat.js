@@ -31,5 +31,6 @@ const Chat = () => <div className='px-2 chatHeight'>
             Seen at 12:46
         </div>
     </div>
+    
 </div>
 export default Chat;

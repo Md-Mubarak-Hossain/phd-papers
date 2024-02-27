@@ -1,19 +1,30 @@
-import React from 'react';
+"use client";
+
+import React from "react";
+import { Link } from "react-router-dom";
 
 const About = () => {
-    return (
-        <>
+  return (
+    <>
+      <li>
+        <details>
+          <summary>About</summary>
+          <ul className="lg:w-24 text-black rounded-none shadow-none text-nowrap">
             <li>
-                <details>
-                    <summary>About</summary>
-                    <ul className="p-2 w-56 text-black">
-                        <li><a>Submenu 1</a></li>
-                        <li><a>Submenu 2</a></li>
-                    </ul>
-                </details>
+              <Link to="/aboutsecurity">
+                <small>Security</small>
+              </Link>
             </li>
-        </>
-    );
+            <li>
+              <Link to="/aboutworkflow">
+                <small>WorkFlow</small>
+              </Link>
+            </li>
+          </ul>
+        </details>
+      </li>
+    </>
+  );
 };
 
 export default About;

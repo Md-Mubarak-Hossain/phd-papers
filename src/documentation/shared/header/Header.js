@@ -3,12 +3,12 @@ import UserType from "../../../accounts/UserType/UserType";
 import Profile from "../../../accounts/UserAccount/Profile/Profile";
 import Contact from "../../Contact/Contact";
 import About from "../../About/About";
-import Blog from "../../Blog/Blog";
 import VerifyCreditiantial from "../../VerifyCreditiential/VerifyCreditiantial";
 import Resorces from "../../resorces/Resorces";
 import Certificat from "../../certificate/Certificat";
 import Search from "../../../utilities/search/Search";
 import { Link } from "react-router-dom";
+import Swap from "../../../utilities/swap/Swap";
 
 const Header = () => {
   const menu1 = (
@@ -61,6 +61,7 @@ const Header = () => {
         {/* Account Section */}
         <Search />
         <div className="flex ">
+          <Swap />
           <UserType className="px-1" />
           <Profile />
         </div>

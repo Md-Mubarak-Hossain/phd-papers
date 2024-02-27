@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import VerifyImgEmail from '../../../components/images/verifyBanner2.jpg';
 const SignUpEmail = () => {
   return (
     <>
       <div className="min-h-screen">
         <div className="rounded-none w-full">
           <figure className="w-full">
-            <img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="sign up image" className="rounded-none h-12 w-full" />
+            <img src={VerifyImgEmail} className="rounded-none h-12 w-full" />
           </figure>
           <form className="card-body">
             <h1 className='p-2 bg-primary rounded text-white text-xl text-center font-medium'>Sign Up here...</h1>

@@ -24,7 +24,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar bg-base-300  container mx-auto">
+      <div className="navbar bg-base-300  container ms-auto">
         <div className="lg:hidden">
           {/* small Device screen */}
           <div className="dropdown">
@@ -59,10 +59,10 @@ const Header = () => {
           <ul className="hero-content menu menu-horizontal px-1 gap-0">{menu1}</ul>
         </div>
         {/* Account Section */}
-        <Search />
-        <div className="flex ">
+        <div className="flex justify-end">
+          <Search />
           <Swap />
-          <UserType/>
+          <UserType />
           <Profile />
         </div>
       </div>

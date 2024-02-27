@@ -7,10 +7,11 @@ import SignUpPhone from './SignUpPhone';
 import SignUpGoolge from './SignUpGoolge';
 import SignUpGitHub from './SignUpGitHub';
 import SignUpMeta from './SignUpMeta';
+import VerifySignUp from '../../../components/images/verifyBanner1.jpg'
 const SignUp = () => {
     return (
         <><div className=" rounded-none">
-            <figure className='h-20 w-full'><img src="https://daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg" alt="sign up!" className='h-20 w-full' /></figure>
+            <figure className='h-20 w-full'><img src={VerifySignUp} alt="sign up!" className='h-20 w-full' /></figure>
             <div className="card-body">
                 <h2 className="card-title">Sign Up with...</h2>
                 <ul className="menu lg:px-7">

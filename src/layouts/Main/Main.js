@@ -14,7 +14,7 @@ const Main = () => {
                 <div className=''><Navbar /></div>
                 <div className='container mx-0'>
                     <div className='mx-0 container'><Header/></div>
-                     <div className='mx-auto h-screen'><Outlet /></div>
+                     <div className='mx-auto min-h-screen'><Outlet /></div>
                     <div className='absolute'><ChatWidget /></div>
                 </div>
             </div>

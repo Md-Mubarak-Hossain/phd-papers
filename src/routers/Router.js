@@ -10,6 +10,7 @@ import Contact from '../documentation/Contact/Contact';
 import About from '../documentation/About/About';
 import Blog from '../documentation/Blog/Blog';
 import ErrorLayout from '../utilities/Error/ErrorLayout';
+import VerifyDoc from '../documentation/VerifyCreditiential/VerifyDoc';
 const Router = () => {
     const routes = createBrowserRouter([
         {
@@ -40,9 +41,15 @@ const Router = () => {
                     path: '/profile',
                     element: <Profile/>
                 },
+
                  /*........................
-                      About Phd Papers
+                    About Phd Papers
                 ..........................*/ 
+                
+                {
+                    path: '/verifydoc',
+                    element: <VerifyDoc/>
+                },
                 {
                     path: '/contact',
                     element: <Contact/>
@@ -55,6 +62,7 @@ const Router = () => {
                     path: '/blog',
                     element: <Blog/>
                 },
+
                 
             ]
         },

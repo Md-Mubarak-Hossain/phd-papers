@@ -11,11 +11,13 @@ const Main = () => {
     return (
         <div className='relative'>
             {/* <Carocel /> */}
-            <div className='w-full flex'>
-                <div><Navbar /></div>
+            <div className='w-full '>
                 <div className='container mx-0'>
-                    <div className='mx-0 container'><Header /></div>
-                    <div className='mx-auto min-h-screen'><Outlet /></div>
+                    <div className='mx-0 container h-20'><Header /></div>
+                    <div className='flex'>
+                        <div><Navbar /></div>
+                        <div className='mx-auto overflow-y-auto min-h-screen'><Outlet /></div>
+                    </div>
                     <div className='absolute'><ChatWidget /></div>
                 </div>
             </div>

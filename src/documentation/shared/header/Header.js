@@ -9,6 +9,7 @@ import Certificat from "../../certificate/Certificat";
 import Search from "../../../utilities/search/Search";
 import { Link } from "react-router-dom";
 import Swap from "../../../utilities/swap/Swap";
+import Logo from "../../../utilities/logo/Logo";
 
 const Header = () => {
   const menu1 = (
@@ -24,7 +25,10 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar bg-base-300  container ms-auto">
+      <div className="navbar container ms-auto border-b-2 border-purple-900 shadow-lg fixed">
+      <div className='navbar-start'>
+      <Logo/>
+      </div>
         <div className="lg:hidden">
           {/* small Device screen */}
           <div className="dropdown">
@@ -55,11 +59,11 @@ const Header = () => {
 
         {/* large Device screen */}
 
-        <div className="hidden lg:flex gap-0">
+        <div className="navbar-center hidden lg:flex gap-0">
           <ul className="hero-content menu menu-horizontal px-1 gap-0">{menu1}</ul>
         </div>
         {/* Account Section */}
-        <div className="flex justify-end">
+        <div className="flex justify-end navbar-end">
           <Search />
           <Swap />
           <UserType />

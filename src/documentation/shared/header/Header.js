@@ -25,7 +25,7 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar container ms-auto border-b-2 border-purple-900 shadow-lg fixed">
+      <div className="navbar container ms-auto border-b-2 border-purple-900 shadow-lg fixed bg-white text-blue-950">
       <div className='navbar-start'>
       <Logo/>
       </div>

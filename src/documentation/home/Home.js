@@ -1,19 +1,15 @@
 import React from 'react';
 const Home = () => {
   return (
-    <div className="min-h-screen bg-base-100">
-      <div className="hero-content text-center">
-        <div className="max-w-md">
-          <h1 className="">How can you vrify...</h1>
-          <p className="py-6">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Natus voluptatem velit placeat molestias magnam. Vel earum provident sunt a ab? Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+    <div className="min-h-screen bg-base-100 text-justify p-5">   
+          <h1 className=""> Welcome Message</h1>
+          <p>
+            Welcome to the official website of "Education Boards Bangladesh", This website contains information about Education Board Bangladesh and its organizational structure, wings, functionality, and resposibilities. This website also contains information about Education Sector Development Program of Bangladesh.
+          </p>
+          <p>
+            There are nine Boards of Intermediate and Secondary Education are responsible for conducting the public examinations such as Secondary School Certificate and Higher Secondary Certificate level public examinations. The Boards are also responsible for the recognisation of the private sector educational institute.
+          </p>
         </div>
-      </div>
-      {/* <div>
-        <Features />
-      </div> */}
-      
-    </div>
-
   );
 };
 

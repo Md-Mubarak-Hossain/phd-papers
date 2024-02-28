@@ -5,12 +5,12 @@ import Footer from '../../documentation/shared/footer/Footer';
 import Navbar from '../../documentation/shared/navbar/Navbar';
 import ChatWidget from '../../documentation/chatWidget/ChatWidget';
 import '../../documentation/chatWidget/ChatWidget.css';
-import Carocel from '../../documentation/carocel/Carocel';
+// import Carocel from '../../documentation/carocel/Carocel';
 
 const Main = () => {
     return (
         <div className='relative'>
-            <Carocel />
+            {/* <Carocel /> */}
             <div className='w-full flex'>
                 <div><Navbar /></div>
                 <div className='container mx-0'>

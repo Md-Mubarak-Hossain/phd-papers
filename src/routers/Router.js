@@ -10,8 +10,6 @@ import Contact from '../documentation/Contact/Contact';
 import About from '../documentation/About/About';
 import Blog from '../documentation/Blog/Blog';
 import ErrorLayout from '../utilities/Error/ErrorLayout';
-
-
 const Router = () => {
     const routes = createBrowserRouter([
         {
@@ -57,7 +55,7 @@ const Router = () => {
                     path: '/blog',
                     element: <Blog/>
                 },
-
+                
             ]
         },
         {

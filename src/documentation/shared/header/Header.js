@@ -10,6 +10,7 @@ import Search from "../../../utilities/search/Search";
 import { Link } from "react-router-dom";
 import Swap from "../../../utilities/swap/Swap";
 import Logo from "../../../utilities/logo/Logo";
+import Navbar from "../navbar/Navbar";
 
 const Header = () => {
   const menu1 = (
@@ -50,6 +51,7 @@ const Header = () => {
               tabIndex={0}
               className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow  rounded-box bg-fuchsia-50 w-fit"
             >
+              <Navbar />
               {menu1}
             </ul>
           </div>

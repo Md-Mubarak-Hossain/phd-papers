@@ -25,10 +25,8 @@ const Header = () => {
 
   return (
     <>
-      <div className="navbar container ms-auto border-b-2 border-purple-900 shadow-lg fixed bg-white text-blue-950">
-      <div className='navbar-start'>
-      <Logo/>
-      </div>
+      <div className="navbar  border-b-2 border-purple-900 shadow-lg fixed bg-white text-blue-950">
+
         <div className="lg:hidden">
           {/* small Device screen */}
           <div className="dropdown">
@@ -56,7 +54,9 @@ const Header = () => {
             </ul>
           </div>
         </div>
-
+        <div className='navbar-start'>
+          <Logo />
+        </div>
         {/* large Device screen */}
 
         <div className="navbar-center hidden lg:flex gap-0">

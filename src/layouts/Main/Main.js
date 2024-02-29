@@ -15,8 +15,8 @@ const Main = () => {
                 <div className='container mx-0'>
                     <div className='mx-0 container h-20'><Header /></div>
                     <div className='flex'>
-                        <div><Navbar /></div>
-                        <div className='mx-auto overflow-y-auto min-h-screen'><Outlet /></div>
+                        <div className='border-2 border-gray-950 w-72'><Navbar /></div>
+                        <div className='ms-auto overflow-y-auto min-h-screen'><Outlet /></div>
                     </div>
                     <div className='absolute'><ChatWidget /></div>
                 </div>

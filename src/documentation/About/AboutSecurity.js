@@ -1,9 +1,10 @@
 import React from 'react';
+import Timeline from './Timeline';
 
 const AboutSecurity = () => {
     return (
         <div>
-            Security comming soon
+            <Timeline/>
         </div>
     );
 };

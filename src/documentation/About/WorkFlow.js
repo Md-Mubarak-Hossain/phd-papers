@@ -1,10 +1,11 @@
 import React from 'react';
+import VerticleTimeline from './VerticleTimeline';
 
 const WorkFlow = () => {
     return (
         <div>
-            tHE PAGE COMMING SOON
-        </div>
+<VerticleTimeline/>      
+      </div>
     );
 };
 

@@ -1,9 +1,26 @@
-import React from 'react';
+
+import React, { useContext } from 'react';
 import { FcGoogle } from "react-icons/fc";
+import { AuthContext } from '../../../authcontext/Context';
 const SignUpGoolge = () => {
+    const { googleLogIn } = useContext(AuthContext);
+    const googleSign = () => {
+        googleLogIn()
+            .then(res => {
+                const user = res.user;
+                console.log(user)
+                navigate(from, { replace: true })
+                alert('successfully login')
+
+            })
+            .catch(err => {
+                console.error(err)
+                alert('failed login')
+            })
+    }
     return (
         <>
-            <button className="btn btn-outline btn-primary">
+            <button onClick={() => googleSign()} className="btn btn-outline btn-primary">
                 <FcGoogle />Google</button>
         </>
     );

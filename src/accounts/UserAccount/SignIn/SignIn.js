@@ -1,15 +1,14 @@
-'use client';
-
 import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../authcontext/Context';
+import useTitle from './../../../hooks/title/useTitle';
 
 const SignIn = () => {
   useTitle('Sign in')
   const navigate = useNavigate();
   const location = useLocation();
   const from = location.from?.state?.pathname || '/';
-  const { logIn, googleLogIn } = useContext(AuthContext);
+  const { logIn } = useContext(AuthContext);
   const [error, setError] = useState('');
   const handleSub = e => {
     e.preventDefault();
@@ -32,20 +31,7 @@ const SignIn = () => {
         // console.error(error)
       })
   }
-  const googleSign = () => {
-    googleLogIn()
-      .then(res => {
-        const user = res.user;
-        console.log(user)
-        navigate(from, { replace: true })
-        alert('successfully login')
 
-      })
-      .catch(err => {
-        console.error(err)
-        alert('failed login')
-      })
-  }
   return (
     <>
       <div className="rounded-none">

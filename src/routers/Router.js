@@ -24,55 +24,56 @@ const Router = () => {
 
                 /*........................
                       Account section
-                ..........................*/ 
+                ..........................*/
                 {
                     path: '/signin',
-                    element: <SignIn/>
+                    element: <SignIn />,
+                    loader: () => fetch('https://food-server-three.vercel.app/users')
                 },
                 {
                     path: '/signup',
-                    element: <SignUp/>
+                    element: <SignUp />
                 },
                 {
                     path: '/signupemail',
-                    element: <SignUpEmail/>
+                    element: <SignUpEmail />
                 },
                 {
                     path: '/profile',
-                    element: <Profile/>
+                    element: <Profile />
                 },
 
-                 /*........................
-                    About Phd Papers
-                ..........................*/ 
-                
+                /*........................
+                   About Phd Papers
+               ..........................*/
+
                 {
                     path: '/verifydoc',
-                    element: <VerifyDoc/>
+                    element: <VerifyDoc />
                 },
                 {
                     path: '/contact',
-                    element: <Contact/>
+                    element: <Contact />
                 },
                 {
                     path: '/about',
-                    element: <About/>
+                    element: <About />
                 },
                 {
                     path: '/blog',
-                    element: <Blog/>
+                    element: <Blog />
                 },
 
-                
+
             ]
         },
         {
-            path:"/*",
-            element:<ErrorLayout/>
+            path: "/*",
+            element: <ErrorLayout />
         }
     ])
-    return (  
-        <RouterProvider router={routes}/>
+    return (
+        <RouterProvider router={routes} />
     );
 };
 

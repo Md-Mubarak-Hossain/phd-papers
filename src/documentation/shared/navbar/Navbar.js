@@ -21,7 +21,6 @@ const Navbar = () => {
             src={resultImg} alt="All result" />
           GovResultBD
         </ExternalLink>
-
       </li>
       <li>
         <ExternalLink

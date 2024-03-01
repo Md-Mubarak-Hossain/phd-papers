@@ -11,6 +11,8 @@ import About from '../documentation/About/About';
 import Blog from '../documentation/Blog/Blog';
 import ErrorLayout from '../utilities/Error/ErrorLayout';
 import VerifyDoc from '../documentation/VerifyCreditiential/VerifyDoc';
+import AboutSecurity from '../documentation/About/AboutSecurity';
+import WorkFlow from '../documentation/About/WorkFlow';
 const Router = () => {
     const routes = createBrowserRouter([
         {
@@ -54,6 +56,14 @@ const Router = () => {
                 {
                     path: '/contact',
                     element: <Contact />
+                },
+                {
+                    path: '/aboutsecurity',
+                    element: <AboutSecurity/>
+                },
+                {
+                    path: '/aboutworkflow',
+                    element: <WorkFlow />
                 },
                 {
                     path: '/about',

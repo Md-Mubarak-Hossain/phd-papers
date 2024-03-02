@@ -7,7 +7,6 @@
   right: 0;
   bottom: 50px;
 }
-
-.chatHeight {
-  min-height: 430px;
+.h550{
+  max-height: 500px;
 }

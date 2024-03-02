@@ -1,9 +1,14 @@
 import React from 'react';
+import Accordin from './Accordin';
 
 const Blog = () => {
     return (
         <div>
-            Blog
+            <div className='ms-auto'><button className="btn">
+                Inbox
+                <div className="badge badge-secondary">+99</div>
+            </button></div>
+            <Accordin />
         </div>
     );
 };

@@ -1,0 +1,32 @@
+@media screen and (max-width:510px) {
+    #hideText{display:none;}
+    #showText{display: flex;
+        flex-direction: column;
+        padding-top: 5px;
+    width: 100%;} 
+    #displayScroll{
+        overflow-y: scroll;
+        max-height: 200px;
+        right: 0;
+        margin-left: auto;
+        } 
+        
+}
+@media screen and (min-width:511px) {
+    #displayScroll{
+        overflow-y: scroll;
+        max-height: 430px;
+        right: 0;
+        margin-left: auto;
+        } 
+}
+@media screen and (max-width:389px) { 
+    #sizeElement{width: 75px;} 
+
+}
+
+@media screen and (min-width:390px) {
+   
+    #sizeElement{width: 100px;} 
+    
+}

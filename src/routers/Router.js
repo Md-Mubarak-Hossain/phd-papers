@@ -21,7 +21,7 @@ const Router = () => {
                 {
                     path: '/',
                     element: <Home />,
-                    loader: () => fetch('https://jsonplaceholder.typicode.com/users')
+                    loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo')
                 },
 
                 /*........................
@@ -30,7 +30,7 @@ const Router = () => {
                 {
                     path: '/signin',
                     element: <SignIn />,
-                    // loader: () => fetch('https://food-server-three.vercel.app/users')
+                    // loader: () => fetch('https://phd-paper-server.vercel.app/users')
                 },
                 {
                     path: '/signup',
@@ -60,7 +60,7 @@ const Router = () => {
                 {
                     path: '/userdashboard',
                     element: <UserDashboard />,
-                    // loader: () => fetch('https://jsonplaceholder.typicode.com/users')
+                    // loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo')
                 },
                 {
                     path: '/contact',

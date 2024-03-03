@@ -11,8 +11,6 @@ import About from '../documentation/About/About';
 import Blog from '../documentation/Blog/Blog';
 import ErrorLayout from '../utilities/Error/ErrorLayout';
 import VerifyDoc from '../documentation/VerifyCreditiential/VerifyDoc';
-import AboutSecurity from '../documentation/About/AboutSecurity';
-import WorkFlow from '../documentation/About/WorkFlow';
 const Router = () => {
     const routes = createBrowserRouter([
         {
@@ -21,7 +19,8 @@ const Router = () => {
             children: [
                 {
                     path: '/',
-                    element: <Home />
+                    element: <Home />,
+                    loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo')
                 },
 
                 /*........................
@@ -30,7 +29,7 @@ const Router = () => {
                 {
                     path: '/signin',
                     element: <SignIn />,
-                    loader: () => fetch('https://food-server-three.vercel.app/users')
+                    // loader: () => fetch('https://phd-paper-server.vercel.app/users')
                 },
                 {
                     path: '/signup',
@@ -52,6 +51,15 @@ const Router = () => {
                 {
                     path: '/verifydoc',
                     element: <VerifyDoc />
+                },
+                /*........................
+                  User Dashboard
+               ..........................*/
+
+                {
+                    path: '/userdashboard',
+                    element: <UserDashboard />,
+                    // loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo')
                 },
                 {
                     path: '/contact',

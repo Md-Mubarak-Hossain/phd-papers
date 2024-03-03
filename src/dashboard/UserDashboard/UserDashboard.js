@@ -9,15 +9,15 @@ const UserDashboard = () => {
     //         .then(res => res.json())
     //         .then(result => setData(result))
     // }, [])
-    const data = useLoaderData();
-    console.log(data);
+    const phdInfo = useLoaderData();
+    console.log(phdInfo);
 
     return (
         <div className='bg-info'>
             <button className='btn btn-primary'>Click See user</button>
-            {data.map(user => <UserPaper
-                key={user.id}
-                user={user}
+            {phdInfo.map(info => <UserPaper
+                key={info.id}
+                info={info}
             />
             )}
         </div>

@@ -11,6 +11,7 @@ import About from '../documentation/About/About';
 import Blog from '../documentation/Blog/Blog';
 import ErrorLayout from '../utilities/Error/ErrorLayout';
 import VerifyDoc from '../documentation/VerifyCreditiential/VerifyDoc';
+import UserDashboard from '../dashboard/UserDashboard/UserDashboard';
 const Router = () => {
     const routes = createBrowserRouter([
         {
@@ -19,7 +20,8 @@ const Router = () => {
             children: [
                 {
                     path: '/',
-                    element: <Home />
+                    element: <Home />,
+                    loader: () => fetch('https://jsonplaceholder.typicode.com/users')
                 },
 
                 /*........................
@@ -28,7 +30,7 @@ const Router = () => {
                 {
                     path: '/signin',
                     element: <SignIn />,
-                    loader: () => fetch('https://food-server-three.vercel.app/users')
+                    // loader: () => fetch('https://food-server-three.vercel.app/users')
                 },
                 {
                     path: '/signup',
@@ -50,6 +52,15 @@ const Router = () => {
                 {
                     path: '/verifydoc',
                     element: <VerifyDoc />
+                },
+                /*........................
+                  User Dashboard
+               ..........................*/
+
+                {
+                    path: '/userdashboard',
+                    element: <UserDashboard />,
+                    // loader: () => fetch('https://jsonplaceholder.typicode.com/users')
                 },
                 {
                     path: '/contact',

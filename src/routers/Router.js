@@ -11,6 +11,9 @@ import About from '../documentation/About/About';
 import Blog from '../documentation/Blog/Blog';
 import ErrorLayout from '../utilities/Error/ErrorLayout';
 import VerifyDoc from '../documentation/VerifyCreditiential/VerifyDoc';
+import UserDashboard from '../dashboard/UserDashboard/UserDashboard';
+import WorkFlow from '../documentation/About/WorkFlow';
+import AboutSecurity from '../documentation/About/AboutSecurity';
 const Router = () => {
     const routes = createBrowserRouter([
         {
@@ -58,7 +61,7 @@ const Router = () => {
 
                 {
                     path: '/userdashboard',
-                    element: <UserDashboard />,
+                    element: <UserDashboard/>,
                     // loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo')
                 },
                 {
@@ -71,7 +74,7 @@ const Router = () => {
                 },
                 {
                     path: '/aboutworkflow',
-                    element: <WorkFlow />
+                    element: <WorkFlow/>
                 },
                 {
                     path: '/about',

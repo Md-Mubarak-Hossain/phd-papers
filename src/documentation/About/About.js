@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -7,22 +5,18 @@ const About = () => {
   return (
     <>
       <li>
-        <details>
-          <summary>About</summary>
-          <ul className="lg:w-24 text-black rounded-none shadow-none text-nowrap">
-            <li>
-              <Link to="/aboutsecurity">
-                <small>Security</small>
-              </Link>
-            </li>
-            <li>
-              <Link to="/aboutworkflow">
-                <small>WorkFlow</small>
-              </Link>
-            </li>
-          </ul>
-        </details>
-      </li>
+            <div className="dropdown dropdown-hover">
+                <summary  role="button" className="hover:border-b-2  border-blue-500">About</summary>
+                <ul  className="dropdown-content top-9 mx-auto widthMenuHover p-6 shadow-lg grid grid-cols-3 gap-2  bg-base-100">
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>      
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>      
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>      
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>      
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>      
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>             
+                </ul>
+            </div>
+        </li>
     </>
   );
 };

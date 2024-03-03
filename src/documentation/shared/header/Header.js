@@ -20,12 +20,13 @@ const Header = () => {
       <Certificat />
       <About />
       <Contact />
-      <li><Link to='/blog'>Blog</Link></li>
+      <li><Link to='/blog'><div className="dropdown dropdown-hover">
+                <summary  role="button" className="hover:border-b-2  border-blue-500">Blog</summary></div></Link></li>
     </>
   );
 
   return (
-    <div className="flex flex-col w-full  border-b-2 border-purple-900 shadow-lg fixed bg-white text-blue-950">
+    <div className="flex flex-col w-full  border-b-4 border-purple-900 shadow-lg fixed bg-base-100 text-base uppercase">
             <div className="hidden" id='showText'>
             <Logo/>
             </div>
@@ -66,7 +67,7 @@ const Header = () => {
           </div>
           {/* large Device screen */}
 
-          <div className="navbar-center hidden lg:flex gap-0">
+          <div className="navbar-center hidden lg:flex gap-0 h-14">
             <ul className="hero-content menu menu-horizontal px-1 gap-0">{menu1}</ul>
           </div>
           {/* Account Section */}

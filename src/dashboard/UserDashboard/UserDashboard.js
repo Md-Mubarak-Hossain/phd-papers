@@ -13,7 +13,7 @@ const UserDashboard = () => {
     console.log(phdInfo);
 
     return (
-        <div className='bg-info'>
+        <div>
             <button className='btn btn-primary'>Click See user</button>
             {phdInfo.map(info => <UserPaper
                 key={info.id}

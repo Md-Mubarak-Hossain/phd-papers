@@ -4,13 +4,17 @@ import { Link } from 'react-router-dom';
 const VerifyCreditiantial = () => {
     return (
         <li>
-            <details>
-                <summary>Verify</summary>
-                <ul className="p-2  text-black w-56">
-                    <li><Link to='/verifydoc'>Verify Doc</Link></li>
-                    <li><a>Submenu 2</a></li>
+            <div className="dropdown dropdown-hover">
+                <summary  role="button" className="hover:border-b-2  border-blue-500">Verify</summary>
+                <ul  className="dropdown-content top-9 mx-auto widthMenuHover p-6 shadow-lg grid grid-cols-3 gap-2  bg-base-100">
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>      
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>      
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>      
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>      
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>      
+                    <li className='w-40'><Link to=''>Lorem ipsum dolor sit amet.</Link></li>             
                 </ul>
-            </details>
+            </div>
         </li>
     );
 };

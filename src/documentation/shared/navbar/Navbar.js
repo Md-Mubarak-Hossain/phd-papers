@@ -3,6 +3,15 @@ import { Link } from 'react-router-dom';
 import { ExternalLink } from 'react-external-link';
 import resultImg from '../../../components/images/allResultLogo.png';
 import electionNID from '../../../components/images/nid.png';
+import smuct from '../../../components/images/smuct.png';
+import birth from '../../../components/images/birth.png';
+import ugc from '../../../components/images/ugc.png';
+import passport from '../../../components/images/passport.png';
+import thesis from '../../../components/images/thesis.png';
+import publicUni from '../../../components/images/publicUni.jpeg';
+import privateUni from '../../../components/images/privateUni.jpeg';
+import nu from '../../../components/images/nu.png';
+import surokkha from '../../../components/images/surokkha.png';
 
 const Navbar = () => {
   const navMenu = [
@@ -22,87 +31,66 @@ const Navbar = () => {
     },
     {
       id: 3,
-      name: "Govt BD Result",
-      href: "http://www.educationboardresults.gov.bd/",
-      imge: resultImg,
-      alt: "All Govt result BD"
+      name: "UGC Of Bangladesh",
+      href: "http://www.ugc-universities.gov.bd/private-universities",
+      imge: ugc,
+      alt: "UGC Of Bangladesh"
     },
     {
       id: 4,
-      name: "NID Of Bangladesh",
-      href: "https://www.nidw.gov.bd/",
-      imge: electionNID,
-      alt: "Election Of BD"
+      name: "Birth Verify BD",
+      href: "https://everify.bdris.gov.bd/UBRNVerification",
+      imge: birth,
+      alt: "Birth Verify Of BD"
     },
     {
       id: 5,
-      name: "Govt BD Result",
-      href: "http://www.educationboardresults.gov.bd/",
-      imge: resultImg,
-      alt: "All Govt result BD"
+      name: "Private University Of Bangladesh",
+      href: "http://www.ugc-universities.gov.bd/private-universities",
+      imge: privateUni,
+      alt: "Private University of BD"
     },
     {
       id: 6,
-      name: "NID Of Bangladesh",
-      href: "https://www.nidw.gov.bd/",
-      imge: electionNID,
-      alt: "Election Of BD"
+      name: "Shanto Mariam University Of Creative Technology",
+      href: "https://smuct.ac.bd/",
+      imge: smuct,
+      alt: "SMUCT"
     },
     {
       id: 7,
-      name: "Govt BD Result",
-      href: "http://www.educationboardresults.gov.bd/",
-      imge: resultImg,
-      alt: "All Govt result BD"
+      name: "E-Passport",
+      href: "https://www.epassport.gov.bd/authorization/login",
+      imge: passport,
+      alt: "E-Passport"
     },
     {
       id: 8,
-      name: "NID Of Bangladesh",
-      href: "https://www.nidw.gov.bd/",
-      imge: electionNID,
-      alt: "Election Of BD"
+      name: "Thesis Journal",
+      href: "https://thesis-journal.net/",
+      imge: thesis,
+      alt: "Thesis Journal"
     },
     {
       id: 9,
-      name: "Govt BD Result",
-      href: "http://www.educationboardresults.gov.bd/",
-      imge: resultImg,
-      alt: "All Govt result BD"
+      name: "Public University Of Bangladesh",
+      href: "http://www.ugc-universities.gov.bd/public-universities",
+      imge: publicUni,
+      alt: "Public Unuversity Of BD"
     },
     {
       id: 10,
-      name: "NID Of Bangladesh",
+      name: "National University of BD",
       href: "https://www.nidw.gov.bd/",
-      imge: electionNID,
-      alt: "Election Of BD"
+      imge: nu,
+      alt: "nu Of BD"
     },
     {
       id: 11,
-      name: "Govt BD Result",
-      href: "http://www.educationboardresults.gov.bd/",
-      imge: resultImg,
-      alt: "All Govt result BD"
-    },
-    {
-      id: 12,
-      name: "NID Of Bangladesh",
+      name: "Surokkha of BD",
       href: "https://www.nidw.gov.bd/",
-      imge: electionNID,
-      alt: "Election Of BD"
-    },
-    {
-      id: 13,
-      name: "Govt BD Result",
-      href: "http://www.educationboardresults.gov.bd/",
-      imge: resultImg,
-      alt: "All Govt result BD"
-    },
-    {
-      id: 14,
-      name: "NID Of Bangladesh",
-      href: "https://www.nidw.gov.bd/",
-      imge: electionNID,
-      alt: "Election Of BD"
+      imge: surokkha,
+      alt: "Vaccsin Of BD"
     }
   ];
   return (

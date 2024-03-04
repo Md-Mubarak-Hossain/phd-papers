@@ -18,12 +18,15 @@ const Main = () => {
                     <div className='container h-20'><Header /></div>
                     <div className='flex'>
                         <div className='w-60 hidden lg:flex'><Navbar /></div>
-                        <div className='w-full lg:ms-auto overflow-y-auto min-h-screen '><Outlet /></div>
+                        <div className='w-full lg:ms-auto overflow-y-auto min-h-screen '>
+                            <Outlet />
+
+                            <div className='w-full px-5'><Footer /></div>
+                        </div>
                     </div>
                     <div className='absolute'><ChatWidget /></div>
                 </div>
             </div >
-            <div className='w-full px-5'><Footer /></div>
         </div >
     );
 };

@@ -94,7 +94,7 @@ const Navbar = () => {
     }
   ];
   return (
-    <div className='lg:fixed'>
+    <div className='lg:fixed  overflow-y-auto navbarHeight'>
       <ul className="menu w-56  text-primary decoration-neutral-content bg-base-100">
         <li>
           <Link to='/'>

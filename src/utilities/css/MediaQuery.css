@@ -4,6 +4,9 @@
     min-height: 100px;
     list-style: none;
 }
+.navbarHeight{
+    max-height: 480px;
+}
 @media screen and (max-width:510px) {
     #hideText{display:none;}
     #showText{display: flex;

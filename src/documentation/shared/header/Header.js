@@ -26,7 +26,7 @@ const Header = () => {
   );
 
   return (
-    <div className="flex flex-col w-full  border-b-4 border-purple-900 shadow-lg fixed bg-base-100 text-base uppercase">
+    <div className="flex flex-col w-full  border-b-4 border-purple-900 shadow-lg fixed bg-base-100 text-base uppercase h-20">
             <div className="hidden" id='showText'>
             <Logo/>
             </div>

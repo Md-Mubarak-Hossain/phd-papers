@@ -80,13 +80,12 @@ const Router = () => {
                     path: '/about',
                     element: <About />
                 },
-                {
-                    path: '/blog',
-                    element: <Blog />
-                },
-
-
+                
             ]
+        },
+        {
+            path: '/blog',
+            element: <Blog />
         },
         {
             path: "/*",

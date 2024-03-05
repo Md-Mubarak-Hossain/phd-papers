@@ -22,6 +22,8 @@ import UserPaper from '../dashboard/UserDashboard/UserPaper';
 import AdminDashboard from '../dashboard/AdminDashboard/AdminDashboard';
 import AppleBoard from '../dashboard/AdminDashboard/AppleBoard';
 import UserInterface from '../dashboard/AdminDashboard/UserInterface';
+import UserPaperUpdate from '../dashboard/UserDashboard/UserPaperUpdate';
+import UserPaperApple from '../dashboard/UserDashboard/UserPaperApple';
 const Router = () => {
     const routes = createBrowserRouter([
         /*........................

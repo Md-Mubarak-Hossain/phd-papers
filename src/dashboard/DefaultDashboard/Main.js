@@ -1,10 +1,10 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
+import '../../documentation/chatWidget/ChatWidget.css';
 import Header from '../../documentation/shared/header/Header';
-import Footer from '../../documentation/shared/footer/Footer';
 import Navbar from '../../documentation/shared/navbar/Navbar';
 import ChatWidget from '../../documentation/chatWidget/ChatWidget';
-import '../../documentation/chatWidget/ChatWidget.css';
+import Footer from '../../documentation/shared/footer/Footer';
 
 const Main = () => {
     return (
@@ -12,10 +12,10 @@ const Main = () => {
             <div className='relative w-full'>
                 <div className=''>
                     <div className='w-full'>
-                        <div className='container h-20'><Header /></div>
+                        <div className='container h-20'><Header/></div>
                         <div className='flex w-full min-h-screen'>
                             <div className='navbarWidth hidden lg:flex bg-base-100 mt-2'>
-                                <Navbar />
+                                <Navbar/>
                             </div>
                             <div className='outletWidth lg:mx-auto min-h-screen lg:px-1'>
                                 <Outlet />
@@ -25,7 +25,7 @@ const Main = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full'><Footer /></div>
+            <div className='w-full'><Footer/></div>
         </div>
     );
 };

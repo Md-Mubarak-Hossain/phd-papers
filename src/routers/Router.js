@@ -1,6 +1,5 @@
 import React from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Main from '../layouts/Main/Main';
 import Home from '../documentation/home/Home';
 import SignUp from '../accounts/UserAccount/SignUp/SignUp';
 import SignUpEmail from '../accounts/UserAccount/SignUp/SignUpEmail';
@@ -24,10 +23,11 @@ import AppleBoard from '../dashboard/AdminDashboard/AppleBoard';
 import UserInterface from '../dashboard/AdminDashboard/UserInterface';
 import UserPaperUpdate from '../dashboard/UserDashboard/UserPaperUpdate';
 import UserPaperApple from '../dashboard/UserDashboard/UserPaperApple';
+import Main from '../dashboard/DefaultDashboard/Main';
 const Router = () => {
     const routes = createBrowserRouter([
         /*........................
-            Default Layout
+            Default Dashboard
         ..........................*/
         {
             path: '/',

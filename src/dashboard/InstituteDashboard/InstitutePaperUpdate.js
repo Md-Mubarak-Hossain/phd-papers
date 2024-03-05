@@ -1,8 +1,8 @@
 
 import React from 'react';
 
-const UserPaperApple = () => {
-    const userPaperApple = [
+const InstitutePaperUpdate = () => {
+    const institutePaperUpdate = [
         { id: 1, name: "studentName", string: "Enter student name", type: "text" },
         { id: 2, name: "studentID", string: "Enter student ID", type: "text" },
         { id: 3, name: "studentCertificateNo", string: "Certificate Serial No" },
@@ -18,10 +18,10 @@ const UserPaperApple = () => {
     return (
         <div className='flex flex-col justify-center items-center w-full mx-auto'>
             <div className='h-20'></div>
-            <caption className='bg-secondary h-12 w-full text-center  text-2xl text-white'>Enter the PhD Holder Information</caption>
+            <caption className='bg-secondary h-12 w-full text-center  text-2xl text-white'>Update the PhD Holder Information</caption>
             <form className='form grid grid-cols-2 gap-x-3 mx-auto min-h-screen w-11/12 bg-base-100'>
                 {
-                    userPaperApple.map(input => <li key={input.id}
+                    institutePaperUpdate.map(input => <li key={input.id}
                         className='menu'>
                         <label className='label'>
                            <span className='labe-text italic'>{input.id+"."} {input.string}</span>
@@ -35,9 +35,9 @@ const UserPaperApple = () => {
                     )
                 }
             </form>
-            <button className='btn btn-primary w-11/12 mx-auto p-2 my-4 btn-outline text-lg'>Submit</button>
+            <button className='btn btn-primary w-11/12 mx-auto p-2 my-4 btn-outline text-lg'>Update</button>
         </div>
     );
 };
 
-export default UserPaperApple;
+export default InstitutePaperUpdate;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ExternalLink } from 'react-external-link';
 import resultImg from '../../../components/images/allResultLogo.png';
 import electionNID from '../../../components/images/nid.png';
 import smuct from '../../../components/images/smuct.png';

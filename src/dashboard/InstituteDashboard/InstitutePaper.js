@@ -1,8 +1,8 @@
 
 import React from 'react';
 
-const UserPaperApple = () => {
-    const userPaperApple = [
+const InstitutePaper = () => {
+    const institutePaper = [
         { id: 1, name: "studentName", string: "Enter student name", type: "text" },
         { id: 2, name: "studentID", string: "Enter student ID", type: "text" },
         { id: 3, name: "studentCertificateNo", string: "Certificate Serial No" },
@@ -21,7 +21,7 @@ const UserPaperApple = () => {
             <caption className='bg-secondary h-12 w-full text-center  text-2xl text-white'>Enter the PhD Holder Information</caption>
             <form className='form grid grid-cols-2 gap-x-3 mx-auto min-h-screen w-11/12 bg-base-100'>
                 {
-                    userPaperApple.map(input => <li key={input.id}
+                    institutePaper.map(input => <li key={input.id}
                         className='menu'>
                         <label className='label'>
                            <span className='labe-text italic'>{input.id+"."} {input.string}</span>
@@ -40,4 +40,4 @@ const UserPaperApple = () => {
     );
 };
 
-export default UserPaperApple;
+export default InstitutePaper;

@@ -1,6 +1,5 @@
 import React from 'react';
 import { RouterProvider, createBrowserRouter } from 'react-router-dom';
-import Main from '../layouts/Main/Main';
 import Home from '../documentation/home/Home';
 import SignUp from '../accounts/UserAccount/SignUp/SignUp';
 import SignUpEmail from '../accounts/UserAccount/SignUp/SignUpEmail';
@@ -14,8 +13,22 @@ import VerifyDoc from '../documentation/VerifyCreditiential/VerifyDoc';
 import UserDashboard from '../dashboard/UserDashboard/UserDashboard';
 import WorkFlow from '../documentation/About/WorkFlow';
 import AboutSecurity from '../documentation/About/AboutSecurity';
+import InstituteDashboard from '../dashboard/InstituteDashboard/InstituteDashboard';
+import InstitutePaper from '../dashboard/InstituteDashboard/InstitutePaper';
+import InstitutePaperUpdate from '../dashboard/InstituteDashboard/InstitutePaperUpdate';
+import InstitutePaperApple from '../dashboard/InstituteDashboard/InstitutePaperApple';
+import UserPaper from '../dashboard/UserDashboard/UserPaper';
+import AdminDashboard from '../dashboard/AdminDashboard/AdminDashboard';
+import AppleBoard from '../dashboard/AdminDashboard/AppleBoard';
+import UserInterface from '../dashboard/AdminDashboard/UserInterface';
+import UserPaperUpdate from '../dashboard/UserDashboard/UserPaperUpdate';
+import UserPaperApple from '../dashboard/UserDashboard/UserPaperApple';
+import Main from '../dashboard/DefaultDashboard/Main';
 const Router = () => {
     const routes = createBrowserRouter([
+        /*........................
+            Default Dashboard
+        ..........................*/
         {
             path: '/',
             element: <Main />,
@@ -23,7 +36,7 @@ const Router = () => {
                 {
                     path: '/',
                     element: <Home />,
-                    loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo')
+                    // loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo')
                 },
 
                 /*........................
@@ -61,7 +74,7 @@ const Router = () => {
 
                 {
                     path: '/userdashboard',
-                    element: <UserDashboard/>,
+                    element: <UserDashboard />,
                     // loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo')
                 },
                 {
@@ -70,24 +83,98 @@ const Router = () => {
                 },
                 {
                     path: '/aboutsecurity',
-                    element: <AboutSecurity/>
+                    element: <AboutSecurity />
                 },
                 {
                     path: '/aboutworkflow',
-                    element: <WorkFlow/>
+                    element: <WorkFlow />
                 },
                 {
                     path: '/about',
                     element: <About />
                 },
-                {
-                    path: '/blog',
-                    element: <Blog />
-                },
-
 
             ]
         },
+        /*........................
+                  Admin Dashboard
+        ..........................*/
+
+        {
+            path: '/adminDashboard',
+            element: <AdminDashboard />,
+            // loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo'),
+            children: [
+                {
+                    path: '/adminDashboard/apple',
+                    element: <AppleBoard/>
+                },
+                {
+                    path: '/adminDashboard/interface',
+                    element: <UserInterface/>
+                },
+                
+            ]
+        },
+        
+        /*........................
+                  Institute Dashboard
+        ..........................*/
+
+        {
+            path: '/instituteDashboard',
+            element: <InstituteDashboard />,
+            // loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo'),
+            children: [
+                {
+                    path: '/instituteDashboard/paper',
+                    element: <InstitutePaper />
+                },
+                {
+                    path: '/instituteDashboard/update',
+                    element: <InstitutePaperUpdate />
+                },
+                {
+                    path: '/instituteDashboard/apple',
+                    element: <InstitutePaperApple />
+                },
+            ]
+        },
+        
+        /*........................
+                  User Dashboard
+        ..........................*/
+        {
+            path: '/userDashboard',
+            element: <UserDashboard />,
+            // loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo'),
+            children: [
+                {
+                    path: '/userDashboard/paper',
+                    element: <UserPaper />
+                },
+                {
+                    path: '/userDashboard/update',
+                    element: <UserPaperUpdate />
+                },
+                {
+                    path: '/userDashboard/apple',
+                    element: <UserPaperApple />
+                },
+            ]
+        },
+       
+        /*........................
+                  Blog site
+        ..........................*/
+        {
+            path: '/blog',
+            element: <Blog />
+        },
+        
+        /*........................
+                  Error ayout
+        ..........................*/
         {
             path: "/*",
             element: <ErrorLayout />

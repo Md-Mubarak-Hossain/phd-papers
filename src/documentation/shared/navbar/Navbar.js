@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ExternalLink } from 'react-external-link';
 import resultImg from '../../../components/images/allResultLogo.png';
 import electionNID from '../../../components/images/nid.png';
 import smuct from '../../../components/images/smuct.png';
@@ -12,7 +11,8 @@ import publicUni from '../../../components/images/publicUni.jpeg';
 import privateUni from '../../../components/images/privateUni.jpeg';
 import nu from '../../../components/images/nu.png';
 import surokkha from '../../../components/images/surokkha.png';
-
+import { IoMdHome } from "react-icons/io";
+import NavbarUtility from './NavbarUtility';
 const Navbar = () => {
   const navMenu = [
     {
@@ -93,25 +93,30 @@ const Navbar = () => {
       alt: "Vaccsin Of BD"
     }
   ];
+
   return (
-    <div className='lg:fixed'>
-      <ul className="menu w-56  text-primary decoration-neutral-content bg-base-100">
-        <li>
-          <Link to='/'>
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-            Home
+    <div
+      className={
+        `hover:lg:fixed 
+    hover:navbarWidth 
+    hover:overflow-y-auto 
+    overflow-hidden 
+    navbarHeight 
+    bg-base-100
+    mt-2
+    scroll-p-0`
+      }>
+      <ul className="w-48 text-primary">
+        <li className='menu justify-start'>
+          <Link to='/' className='h-6'>
+            <IoMdHome className='text-xl' />Home
           </Link >
         </li>
         {
-          navMenu.map(m => <li className='' key={m.id}>
-            <ExternalLink
-              href={m.href}>
-              <img
-                className='h-6'
-                src={m.imge} alt={m.alt} />
-              {m.name}
-            </ExternalLink>
-          </li>)
+          navMenu.map(m => <NavbarUtility
+            key={m.id}
+            m={m}>
+          </NavbarUtility>)
         }
       </ul>
     </div>

@@ -1,32 +1,33 @@
 import React from "react";
-import UserType from "../../../accounts/UserType/UserType";
-import Profile from "../../../accounts/UserAccount/Profile/Profile";
-import Contact from "../../Contact/Contact";
-import About from "../../About/About";
-import VerifyCreditiantial from "../../VerifyCreditiential/VerifyCreditiantial";
-import Resorces from "../../resorces/Resorces";
-import Certificat from "../../certificate/Certificat";
-import Search from "../../../utilities/search/Search";
+import '../../utilities/css/MediaQuery.css';
+import Resorces from "../../documentation/resorces/Resorces";
+import Certificat from "../../documentation/certificate/Certificat";
+import About from "../../documentation/About/About";
+import Contact from "../../documentation/Contact/Contact";
 import { Link } from "react-router-dom";
-import Swap from "../../../utilities/swap/Swap";
-import Logo from "../../../utilities/logo/Logo";
-import Navbar from "../navbar/Navbar";
-import '../../../utilities/css/MediaQuery.css'
-const Header = () => {
+import Logo from "../../utilities/logo/Logo";
+import Navbar from "../../documentation/shared/navbar/Navbar";
+import Search from "../../utilities/search/Search";
+import Swap from "../../utilities/swap/Swap";
+import UserType from "../../accounts/UserType/UserType";
+import Profile from "../../accounts/UserAccount/Profile/Profile";
+import VerifyCreditiantial from "../../documentation/VerifyCreditiential/VerifyCreditiantial";
+const UserDashboardHeader = () => {
   const menu1 = (
     <>
-      <VerifyCreditiantial />
-      <Resorces />
-      <Certificat />
-      <About />
+      <VerifyCreditiantial/>
+      <Resorces/>
+      <Certificat/>
+      <About/>
       <Contact />
       <li><Link to='/blog'><div className="dropdown dropdown-hover">
-                <summary  role="button" className="hover:border-b-2  border-blue-500">Blog</summary></div></Link></li>
+                <summary  role="button" className="hover:border-b-2  border-blue-500">Blog</summary>
+                </div></Link></li>
     </>
   );
 
   return (
-    <div className="flex flex-col w-full  border-b-4 border-purple-900 shadow-lg fixed bg-base-100 text-base uppercase">
+    <div className="flex flex-col w-full  border-b-4 border-purple-900 shadow-lg fixed bg-base-100 text-base uppercase h-20">
             <div className="hidden" id='showText'>
             <Logo/>
             </div>
@@ -72,7 +73,7 @@ const Header = () => {
           </div>
           {/* Account Section */}
           <div className="flex justify-end navbar-end">
-            <Search />
+            <Search/>
             <Swap />
             <UserType />
             <Profile />
@@ -83,4 +84,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default UserDashboardHeader;

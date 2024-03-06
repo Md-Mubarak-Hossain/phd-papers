@@ -1,12 +1,12 @@
 import React from 'react';
 import './Blog.css'
-import Header from '../shared/header/Header';
 import Footer from '../shared/footer/Footer';
+import BlogHeader from './BlogHeader';
 
 const Blog = () => {
     return (
         <>
-            <Header />
+            <BlogHeader/>
             <div className='h-20'>
             </div>
             <div className='pageBlog top-8'>

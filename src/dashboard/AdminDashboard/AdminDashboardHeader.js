@@ -27,7 +27,7 @@ const AdminDashboardHeader = () => {
   );
 
   return (
-    <div className="flex flex-col w-full  border-b-4 border-purple-900 shadow-lg fixed bg-base-100 text-base uppercase h-20">
+    <div className="flex flex-col w-full  border-b-2 border-purple-900 shadow-lg fixed bg-base-100 text-base uppercase h-20">
             <div className="hidden" id='showText'>
             <Logo/>
             </div>
@@ -69,11 +69,14 @@ const AdminDashboardHeader = () => {
           {/* large Device screen */}
 
           <div className="navbar-center hidden lg:flex gap-0 h-14">
-            <ul className="hero-content menu menu-horizontal px-1 gap-0">{menu1}</ul>
+            <ul className="hero-content menu menu-horizontal px-1 gap-0">
+              {menu1}
+            </ul>
+              <Search/>
           </div>
           {/* Account Section */}
-          <div className="flex justify-end navbar-end">
-            <Search/>
+          <div className="flex  navbar-end">
+          
             <Swap />
             <UserType />
             <Profile />

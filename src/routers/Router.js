@@ -24,6 +24,9 @@ import UserInterface from '../dashboard/AdminDashboard/UserInterface';
 import UserPaperUpdate from '../dashboard/UserDashboard/UserPaperUpdate';
 import UserPaperApple from '../dashboard/UserDashboard/UserPaperApple';
 import Main from '../dashboard/DefaultDashboard/Main';
+import AdminSignUp from '../accounts/AdminAccount/adminSignUp/AdminSignUp';
+import AdminSignUpEmail from '../accounts/AdminAccount/adminSignUp/AdminSignUpEmail';
+import ContactEmail from '../documentation/Contact/ContactEmail';
 const Router = () => {
     const routes = createBrowserRouter([
         /*........................
@@ -82,6 +85,10 @@ const Router = () => {
                     element: <Contact />
                 },
                 {
+                    path:"/contact/email",
+                    element:<ContactEmail/>
+                },
+                {
                     path: '/aboutsecurity',
                     element: <AboutSecurity />
                 },
@@ -103,8 +110,16 @@ const Router = () => {
         {
             path: '/adminDashboard',
             element: <AdminDashboard />,
-            // loader: () => fetch('https://phd-paper-server.vercel.app/phdInfo'),
+            loader: () => fetch('https://phd-paper-server.vercel.app/admin'),
             children: [
+                {
+                    path: '/adminDashboard/adminSignUp',
+                    element: <AdminSignUp/>
+                },
+                {
+                    path: '/adminDashboard/adminSignUpEmail',
+                    element: <AdminSignUpEmail/>
+                },
                 {
                     path: '/adminDashboard/apple',
                     element: <AppleBoard/>
@@ -173,7 +188,7 @@ const Router = () => {
         },
         
         /*........................
-                  Error ayout
+                  Error layout
         ..........................*/
         {
             path: "/*",

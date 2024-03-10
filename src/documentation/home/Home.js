@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Features from './Features';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         There are hundred plus of Universities and Colleges degree are responsible for conducting the Philosophy of doctorates degree  such as PhD Certificate and Undergraduate Certificate level . The website is also responsible for the recognisation of the private sector educational institute.
         <span className='link'>&nbsp;see more...</span>
       </div>
+      <Features/>
     </div >
   );
 };

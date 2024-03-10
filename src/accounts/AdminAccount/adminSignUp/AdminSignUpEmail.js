@@ -2,12 +2,13 @@ import React, { useContext, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import VerifyImgEmail from '../../../components/images/verifyBanner1.jpg';
 import useTitle from '../../../hooks/title/useTitle';
+import { AuthContext } from '../../../authcontext/Context';
 const AdminSignUpEmail = () => {
   useTitle('admin-sign-up')
   const navigate = useNavigate();
   const location = useLocation();
-  const from = location.from?.state?.pathname || '/';
-  const { loading, createUser, googleLogIn } = useContext(AuthContext)
+  const from = location.from?.state?.pathname||'/adminDashboard';
+  const { createUser } = useContext(AuthContext)
   const [error, setError] = useState('')
   const handleSub = e => {
     e.preventDefault();
@@ -19,8 +20,8 @@ const AdminSignUpEmail = () => {
     const contact = form.contact.value;
     const email = form.email.value;
     const password = form.password.value;
-    const confirm = form.confirm.value;
-    if (!password.includes(confirm)) {
+    const confirmPassword = form.confirm.value;
+    if (!password.includes(confirmPassword)) {
       return setError('Password is not matched')
     }
     if (password.length < 8) {
@@ -30,11 +31,11 @@ const AdminSignUpEmail = () => {
       .then(res => {
         const user = res.user;
         console.log(user)
-        const type="admin";
+        const accountType="admin";
         const userInfo = {
-          email, password,confirm, fname, lname, userName, contact, userPhoto,type
+          email, password,confirmPassword, fname, lname, userName, contact, userPhoto,accountType
         }
-        fetch('https://food-server-three.vercel.app/recipes', {
+        fetch('https://phd-paper-server.vercel.app/admin', {
           method: 'POST',
           headers: {
             'content-type': 'application/json'

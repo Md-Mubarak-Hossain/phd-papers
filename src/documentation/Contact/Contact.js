@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Contact = () => {
     return (
@@ -19,7 +20,7 @@ const Contact = () => {
                 <ul  className="dropdown-content top-9 mx-auto widthMenuHover p-6 shadow-lg grid grid-cols-3 gap-2  bg-base-100">
                     <li><a href="">Hotline</a></li>        
                     <li><a>WhatsApp</a></li>
-                    <li><a> Email</a></li>
+                    <li><Link to="/contact/email"> Email</Link></li>
                      <li><a>Facebook</a></li>
                     <li><a>LinkedIn</a></li>
                      <li><a>Discord</a></li>

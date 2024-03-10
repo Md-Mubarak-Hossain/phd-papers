@@ -13,7 +13,7 @@ const AdminSignUp = () => {
             <div className="card-body">
                 <h2 className="card-title">Sign Up with...</h2>
                 <ul className="menu lg:px-7">
-                    <Link to='/admin/signUpEmail'>
+                    <Link to='/adminDashboard/adminSignUpEmail'>
                         <li className='lg:p-1'><button className="btn btn-outline">
                             <MdEmail />User Email</button>
                         </li>
